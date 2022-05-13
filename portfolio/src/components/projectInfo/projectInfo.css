@@ -1,0 +1,31 @@
+.projectInfoContainer {
+  display: flex;
+  width: 60%;
+  height: 40%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  border: 1px solid blue;
+}
+.projectInfoImage {
+  display: flex;
+  height: 300px;
+  width: 300px;
+  border: 1px solid red;
+}
+
+@media only screen and (max-width: 600px) {
+  .projectInfoContainer {
+    display: flex;
+    position: absolute;
+    z-index: 3;
+    background-color: white;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .projectInfoImage {
+    height: 200px;
+    width: 200px;
+  }
+}
