@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import Nav from "../components/navbar/nav.js";
 import "../styles/Projects.css";
 import ProjectInfo from "../components/projectInfo/projectInfo.js";
+import DDR from "../files/DDR.jpeg";
+import Inner from "../files/inner.jpeg";
+import Maps from "../files/maps.jpeg";
 
 export default function Projects() {
   const allProjects = [
@@ -10,28 +13,28 @@ export default function Projects() {
       name: "Hater",
       git: "https://github.com/Newbz521/hater",
       url: "https://main--hater.netlify.app/",
-      img: "img",
+      img: "../files/",
       tag: "Hater",
     },
     {
       name: "Inner Bod",
       git: "https://github.com/Newbz521/TheInnerBod",
       url: "https://theinnerbod.netlify.app/",
-      img: "img",
+      img: Inner,
       tag: "Inner",
     },
     {
       name: "Places",
       git: "https://github.com/Newbz521/Places-API-Reac-Front-End",
       url: "https://vermillion-toffee-d0faa8.netlify.app/",
-      img: "img",
+      img: Maps,
       tag: "Places",
     },
     {
       name: "DDR",
       git: "https://github.com/Newbz521/DDR",
       url: "https://newbz521.github.io/DDR/",
-      img: "img",
+      img: DDR,
       tag: "DDR",
     },
   ];

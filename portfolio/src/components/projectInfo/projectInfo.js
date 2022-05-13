@@ -4,9 +4,10 @@ export default function ProjectInfo(props) {
   return (
     <div className="projectInfoContainer">
       <div className="projectInfoImage">
-        <img src={props.image}></img>
-      </div>
-      <div>
+        <div className="pin"></div>
+        <div className="projectImageWrap">
+          <img className="screenShot" src={props.image}></img>
+        </div>
         <div>Project:{props.name}</div>
         <div>
           <a href={props.url} target="_blank">
@@ -19,6 +20,7 @@ export default function ProjectInfo(props) {
           </a>
         </div>
       </div>
+      <div></div>
     </div>
   );
 }

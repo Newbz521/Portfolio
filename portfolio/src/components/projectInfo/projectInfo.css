@@ -1,17 +1,82 @@
 .projectInfoContainer {
   display: flex;
   width: 60%;
-  height: 40%;
-  justify-content: flex-start;
-  align-items: flex-start;
+  height: 60%;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
+}
+.pin {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: red;
+  box-shadow: 0 5px 5px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+  /* position: absolute; */
 }
 .projectInfoImage {
   display: flex;
-  height: 300px;
+  height: 400px;
   width: 300px;
-  border: 1px solid red;
+  border: 1px solid rgb(209, 209, 209);
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  flex-direction: column;
+  color: grey;
+  font-family: "Handlee", cursive;
+  font-size: 20px;
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+  animation: swing 5s;
+  transform-origin: top center;
+}
+@keyframes swing {
+  20% {
+    transform: rotate(10deg);
+    transform-origin: top center;
+  }
+  40% {
+    transform: rotate(-7deg);
+    transform-origin: top center;
+  }
+  60% {
+    transform: rotate(5deg);
+    transform-origin: top center;
+  }
+  80% {
+    transform: rotate(-5deg);
+    transform-origin: top center;
+  }
+  100% {
+    transform: rotate(0deg);
+    transform-origin: top center;
+  }
+}
+.projectImageWrap {
+  display: flex;
+  height: 300px;
+  width: 270px;
+  border: 1px solid rgb(192, 192, 192);
+  margin-top: 15px;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+  filter: none;
+  box-shadow: invert 0 1px 2px 0 rgb(60 64 67 / 30%),
+    0 2px 6px 2px rgb(60 64 67 / 15%);
+}
+.screenShot {
+  /* display: flex; */
+  background-size: cover;
+  height: 100%;
+  width: fit-content;
+}
+a {
+  text-decoration: none;
+  color: grey;
+  font-family: "Handlee", cursive;
 }
 
 @media only screen and (max-width: 600px) {
