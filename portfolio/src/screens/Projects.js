@@ -6,6 +6,7 @@ import ProjectInfo from "../components/projectInfo/projectInfo.js";
 import DDR from "../files/DDR.jpeg";
 import Inner from "../files/inner.jpeg";
 import Maps from "../files/maps.jpeg";
+import Hater from "../files/maps.jpeg";
 
 export default function Projects() {
   const allProjects = [
@@ -13,7 +14,7 @@ export default function Projects() {
       name: "Hater",
       git: "https://github.com/Newbz521/hater",
       url: "https://main--hater.netlify.app/",
-      img: "../files/",
+      img: Hater,
       tag: "Hater",
     },
     {
