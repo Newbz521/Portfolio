@@ -76,7 +76,8 @@
   font-size: 23px;
   transition: 0.5s;
   border-radius: 50%;
-  box-shadow: 10px 10px 0px #dc382c, -10px -10px 0px rgb(255, 255, 255);
+  box-shadow: 14px 14px 0px #254a4a, -14px -14px 0px #95ffff;
+  /* box-shadow: 10px 10px 0px #dc382c, -10px -10px 0px rgb(255, 255, 255); */
   position: fixed;
 }
 .landingJS {
