@@ -45,6 +45,10 @@
   color: white;
   margin: 40px;
 }
+.contacts {
+  display: flex;
+  gap: 10px;
+}
 
 @media only screen and (max-width: 600px) {
   .aboutDescription {

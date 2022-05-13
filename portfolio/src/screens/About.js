@@ -40,6 +40,21 @@ export default function About() {
           towards growing alongside the seemingly infinite potential of
           software, further improving the lives of everyone around us.{" "}
         </div>
+        <div>
+          <div className="contacts">
+            law.yee2133@gmail.com |{" "}
+            <a
+              href="https://www.linkedin.com/in/lawrenceyee91/"
+              target="_blank"
+            >
+              LinkedIn
+            </a>{" "}
+            |
+            <a href="https://github.com/Newbz521" target="_blank">
+              GitHub
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );

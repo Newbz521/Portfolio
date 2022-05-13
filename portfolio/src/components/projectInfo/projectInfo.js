@@ -10,12 +10,12 @@ export default function ProjectInfo(props) {
         </div>
         <div>Project:{props.name}</div>
         <div>
-          <a href={props.url} target="_blank">
+          <a className="links" href={props.url} target="_blank">
             Deployment
           </a>
         </div>
         <div>
-          <a href={props.git} target="_blank">
+          <a className="links" href={props.git} target="_blank">
             Git
           </a>
         </div>

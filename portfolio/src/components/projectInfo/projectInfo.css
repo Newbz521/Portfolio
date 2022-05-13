@@ -73,7 +73,7 @@
   height: 100%;
   width: fit-content;
 }
-a {
+.links {
   text-decoration: none;
   color: grey;
   font-family: "Handlee", cursive;
