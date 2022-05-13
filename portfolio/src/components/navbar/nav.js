@@ -22,7 +22,7 @@ function Nav(props) {
       >
         Projects
       </Link>
-      <Link className="navLink" to="/Projects" style={{ color: props.color }}>
+      <Link className="navLink" to="/About" style={{ color: props.color }}>
         About
       </Link>
       <Link className="navLink" to="/Projects" style={{ color: props.color }}>
