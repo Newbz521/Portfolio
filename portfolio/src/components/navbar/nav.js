@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./nav.css";
+import Resume from "../../files/Resume.pdf";
 
 function Nav(props) {
   // const [color, setColor] = useState("white");
@@ -25,9 +26,14 @@ function Nav(props) {
       <Link className="navLink" to="/About" style={{ color: props.color }}>
         About
       </Link>
-      <Link className="navLink" to="/Projects" style={{ color: props.color }}>
+      <a
+        className="navLink"
+        href={Resume}
+        target="_blank"
+        style={{ color: props.color }}
+      >
         Resume
-      </Link>
+      </a>
     </nav>
   );
 }
