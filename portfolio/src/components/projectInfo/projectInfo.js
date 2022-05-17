@@ -1,10 +1,14 @@
 import "./projectInfo.css";
 
 export default function ProjectInfo(props) {
+  function closeModal() {
+    props.closer("none");
+  }
+
   return (
     <div className="projectInfoContainer">
       <div className="projectInfoImage">
-        <div className="pin"></div>
+        <div className="pin" onClick={closeModal}></div>
         <div className="projectImageWrap">
           <img className="screenShot" src={props.image}></img>
         </div>

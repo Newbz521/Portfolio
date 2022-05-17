@@ -42,7 +42,6 @@ export default function Projects() {
   const [current, setCurrent] = useState("none");
 
   function changeProject(e) {
-    // e.prevent.default();
     setCurrent(e.target.dataset.key);
   }
 
@@ -80,6 +79,7 @@ export default function Projects() {
                 url={data.url}
                 name={data.name}
                 image={data.img}
+                closer={setCurrent}
               ></ProjectInfo>
             )
         )}
