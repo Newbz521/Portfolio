@@ -136,4 +136,14 @@
     animation-name: slideLeft;
     animation-duration: 1.25s;
   }
+  .projectText {
+    font-size: 25px;
+  }
+  .project1,
+  .project2,
+  .project3,
+  .project4 {
+    width: 175px;
+    height: 80px;
+  }
 }
