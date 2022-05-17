@@ -117,9 +117,8 @@
     top: 50px;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 25px;
   }
   .project1 {
     animation-name: slideLeft;
