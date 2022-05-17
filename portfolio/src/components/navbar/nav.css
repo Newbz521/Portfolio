@@ -61,6 +61,7 @@
       0 2px 6px 2px rgb(60 64 67 / 15%);
     text-orientation: upright;
     text-transform: uppercase;
+    z-index: 5;
   }
   .navLink {
     border: 1.5px solid red;
