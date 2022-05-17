@@ -83,14 +83,28 @@
   .projectInfoContainer {
     display: flex;
     position: absolute;
+    height: 400px;
+    width: 250px;
     z-index: 3;
-    background-color: white;
+    /* background-color: white; */
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    /* border: 1px solid blue; */
   }
+
   .projectInfoImage {
-    height: 200px;
-    width: 200px;
+    height: 400px;
+    width: 250px;
+  }
+  .projectImageWrap {
+    height: 280px;
+    width: 230px;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+    filter: none;
+    box-shadow: invert 0 1px 2px 0 rgb(60 64 67 / 30%),
+      0 2px 6px 2px rgb(60 64 67 / 15%);
   }
 }

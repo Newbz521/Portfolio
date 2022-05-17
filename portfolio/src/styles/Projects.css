@@ -110,7 +110,14 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .projectsContainer {
+    transition: 0s;
+  }
   .projectContent {
+    width: 100%;
+    left: 0;
+    height: calc(100% - 50px);
+    top: 50px;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;

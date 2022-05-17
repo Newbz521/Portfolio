@@ -51,6 +51,20 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .aboutContent {
+    width: 100%;
+    left: 0;
+    height: calc(100% - 50px);
+    top: 50px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .aboutTitle {
+    font-size: 50px;
+  }
   .aboutDescription {
     width: 70%;
   }

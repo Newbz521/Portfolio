@@ -20,7 +20,6 @@ export default function ProjectInfo(props) {
           </a>
         </div>
       </div>
-      <div></div>
     </div>
   );
 }
