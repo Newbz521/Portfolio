@@ -5,28 +5,31 @@ import "../styles/About.css";
 import ProjectInfo from "../components/projectInfo/projectInfo.js";
 
 export default function About() {
-  const allProjects = [
-    {
-      name: "Hater",
-      git: "https://github.com/Newbz521/hater",
-      url: "https://main--hater.netlify.app/",
-      img: "img",
-      tag: "Hater",
-    },
+  const text = [
+    "NYC.",
+    "Software.Dev",
+    "Full.Stack",
+    "Designer",
+    "Lawrence.Yee",
   ];
-  const [current, setCurrent] = useState("none");
+  const [word, setWord] = useState("Lawrence.Yee");
 
-  function changeProject(e) {
-    // e.prevent.default();
-    setCurrent(e.target.dataset.key);
-  }
+  let index = 0;
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setWord(text[index++ % text.length]);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="aboutContainer">
       <Nav color={"white"}></Nav>
       <div className="aboutBackground"></div>
       <div className="aboutContent">
-        <div className="aboutTitle">About Me</div>
+        <div className="titleWrap">
+          <div className="aboutTitle">{word}</div>
+        </div>
         <div className="aboutDescription">
           {" "}
           From architecture designer to software engineer, I bring experience in
