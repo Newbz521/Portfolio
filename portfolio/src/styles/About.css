@@ -3,7 +3,7 @@
   position: fixed;
   height: 100%;
   width: 100%;
-  background: #f6f3e0;
+  background: rgb(248, 145, 108);
   z-index: -1;
 }
 .aboutContainer {
@@ -70,7 +70,6 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    gap: 50px;
   }
   .aboutTitle {
     font-size: 30px;
