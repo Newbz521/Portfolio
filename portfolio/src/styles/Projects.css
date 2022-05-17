@@ -113,7 +113,7 @@
   .projectContent {
     width: 100%;
     left: 0;
-    height: calc(100% - 50px);
+    height: calc(100vh - 75px);
     top: 50px;
     flex-direction: column;
     flex-wrap: nowrap;
