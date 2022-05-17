@@ -47,7 +47,7 @@ export default function Projects() {
 
   return (
     <div className="projectsContainer">
-      <Nav color={"grey"}></Nav>
+      <Nav color={"grey"} background={"#f6f3e0"}></Nav>
       <div className="background"></div>
       <div className="projectContent">
         <div className="project1" data-key={"Hater"} onClick={changeProject}>

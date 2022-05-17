@@ -11,7 +11,10 @@ function Nav(props) {
   }
 
   return (
-    <nav className="navContainer">
+    <nav
+      className="navContainer"
+      style={{ "background-color": props.background }}
+    >
       <Link className="navLink" to="/" style={{ color: props.color }}>
         Home
       </Link>

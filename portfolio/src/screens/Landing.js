@@ -54,7 +54,7 @@ export default function Landing() {
 
   return (
     <div className="landingContainer">
-      <Nav color={"#FEEFC8"}></Nav>
+      <Nav color={"#FEEFC8"} background={"#5db8b9"}></Nav>
       <div className="landingBackground"></div>
       <div className="landingContent">
         {skills.map((data) => (
