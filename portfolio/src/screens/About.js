@@ -24,7 +24,7 @@ export default function About() {
 
   return (
     <div className="aboutContainer">
-      <Nav color={"white"}></Nav>
+      <Nav color={"white"} background={"rgb(248, 145, 108)"}></Nav>
       <div className="aboutBackground"></div>
       <div className="aboutContent">
         <div className="titleWrap">
