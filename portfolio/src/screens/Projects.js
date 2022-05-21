@@ -13,7 +13,7 @@ export default function Projects() {
     {
       name: "Hater",
       git: "https://github.com/Newbz521/hater",
-      url: "https://main--hater.netlify.app/",
+      url: "https://haterip.netlify.app/",
       img: Hater,
       tag: "Hater",
     },
