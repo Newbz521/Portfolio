@@ -27,6 +27,7 @@
   align-items: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .project1,

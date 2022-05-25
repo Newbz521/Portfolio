@@ -16,6 +16,7 @@ export default function Projects() {
       url: "https://haterip.netlify.app/",
       img: Hater,
       tag: "Hater",
+      project: "project1",
     },
     {
       name: "Inner Bod",
@@ -23,6 +24,7 @@ export default function Projects() {
       url: "https://theinnerbod.netlify.app/",
       img: Inner,
       tag: "Inner",
+      project: "project2",
     },
     {
       name: "Places",
@@ -30,6 +32,7 @@ export default function Projects() {
       url: "https://vermillion-toffee-d0faa8.netlify.app/",
       img: Maps,
       tag: "Places",
+      project: "project3",
     },
     {
       name: "DDR",
@@ -37,39 +40,30 @@ export default function Projects() {
       url: "https://newbz521.github.io/DDR/",
       img: DDR,
       tag: "DDR",
+      project: "project4",
     },
   ];
   const [current, setCurrent] = useState("none");
-
   function changeProject(e) {
     setCurrent(e.target.dataset.key);
+    console.log(e.target.dataset.key);
   }
-
   return (
     <div className="projectsContainer">
       <Nav color={"grey"} background={"#f6f3e0"}></Nav>
       <div className="background"></div>
       <div className="projectContent">
-        <div className="project1" data-key={"Hater"} onClick={changeProject}>
-          <div className="projectText" data-key={"Hater"}>
-            Hater
+        {allProjects.map((data) => (
+          <div
+            className={data.project}
+            data-key={data.tag}
+            onClick={changeProject}
+          >
+            <div className="projectText" data-key={data.tag}>
+              {data.name}
+            </div>
           </div>
-        </div>
-        <div className="project2" data-key={"Inner"} onClick={changeProject}>
-          <div className="projectText" data-key={"Inner"}>
-            Inner Bod
-          </div>
-        </div>
-        <div className="project3" data-key={"Places"} onClick={changeProject}>
-          <div className="projectText" data-key={"Places"}>
-            Places
-          </div>
-        </div>
-        <div className="project4" data-key={"DDR"} onClick={changeProject}>
-          <div className="projectText" data-key={"DDR"}>
-            DDR
-          </div>
-        </div>
+        ))}
 
         {allProjects.map(
           (data) =>

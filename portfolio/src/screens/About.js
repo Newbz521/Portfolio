@@ -12,8 +12,8 @@ export default function About() {
     "Designer",
     "Lawrence.Yee",
   ];
-  const [word, setWord] = useState("Lawrence.Yee");
 
+  const [word, setWord] = useState("Lawrence.Yee");
   let index = 0;
   useEffect(() => {
     const interval = setInterval(() => {
