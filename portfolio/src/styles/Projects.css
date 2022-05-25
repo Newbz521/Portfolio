@@ -149,3 +149,42 @@
     height: 80px;
   }
 }
+
+@media only screen and (max-height: 600px) {
+  .projectContent {
+    width: 100%;
+    left: 0;
+    height: calc(100vh - 50px);
+    top: 50px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .project1 {
+    animation-name: slideLeft;
+    animation-duration: 0.5s;
+  }
+  .project2 {
+    animation-name: slideLeft;
+    animation-duration: 0.75s;
+  }
+  .project3 {
+    animation-name: slideLeft;
+    animation-duration: 1s;
+  }
+  .project4 {
+    animation-name: slideLeft;
+    animation-duration: 1.25s;
+  }
+  .projectText {
+    font-size: 25px;
+  }
+  .project1,
+  .project2,
+  .project3,
+  .project4 {
+    width: 60%;
+    height: 80px;
+  }
+}

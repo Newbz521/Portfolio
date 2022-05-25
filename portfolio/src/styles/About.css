@@ -113,3 +113,51 @@ a {
     border-color: rgb(0, 0, 0);
   }
 }
+
+@media only screen and (max-height: 600px) {
+  .aboutContent {
+    padding-top: 80px;
+    width: 100%;
+    left: 0;
+    height: calc(100% - 50px);
+    top: 50px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    /* border: 1px solid blue; */
+  }
+  .aboutTitle {
+    font-size: 25px;
+  }
+  .aboutDescription {
+    width: 80%;
+    height: 50%;
+  }
+  .contacts {
+    font-size: 15px;
+    color: white;
+  }
+}
+
+@keyframes typeOut {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(0, 0, 0);
+  }
+}

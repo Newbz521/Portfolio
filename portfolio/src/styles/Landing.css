@@ -225,3 +225,48 @@
     font-size: 70px;
   }
 }
+@media only screen and (max-height: 600px) {
+  .landingContent {
+    width: 100%;
+    left: 0;
+    height: calc(100% - 50px);
+    top: 50px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .landingJS,
+  .landingCSS,
+  .landingHTML,
+  .landingReact,
+  .landingExpress,
+  .landingMongo,
+  .landingNode,
+  .landingHeroku {
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 90px;
+    height: 90px;
+    background: #f6f3e0;
+    color: #000000;
+    /* font-weight: bold; */
+    justify-content: center;
+    align-items: center;
+    font-family: "Bungee Outline", cursive;
+    font-weight: bolder;
+    font-size: 18px;
+    transition: 0.5s;
+    border-radius: 50%;
+    box-shadow: 8px 8px 0px #254a4a, -8px -8px 0px #95ffff;
+    /* box-shadow: 10px 10px 0px #dc382c, -10px -10px 0px rgb(255, 255, 255); */
+    position: fixed;
+  }
+  .landingProPic {
+    width: 120px;
+    height: 120px;
+    font-size: 70px;
+  }
+}
