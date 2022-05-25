@@ -28,6 +28,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   overflow: hidden;
+  gap: 50px;
 }
 
 .project1,
@@ -37,12 +38,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 40px;
-  margin-right: 40px;
+
   margin-top: 40px;
-  margin-bottom: 40px;
-  width: 200px;
-  height: 200px;
+
+  width: 15%;
+  height: 250px;
   border-radius: 15px;
   background: #dc382c;
   box-shadow: 14px 14px 0px #857a77, -14px -14px 0px #ffffff;
@@ -118,7 +118,7 @@
     top: 50px;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
   }
   .project1 {
@@ -144,7 +144,7 @@
   .project2,
   .project3,
   .project4 {
-    width: 175px;
+    width: 60%;
     height: 80px;
   }
 }

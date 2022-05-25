@@ -1,4 +1,6 @@
 import "./projectInfo.css";
+import { BsGithub } from "react-icons/bs";
+import { SiNetlify } from "react-icons/si";
 
 export default function ProjectInfo(props) {
   function closeModal() {
@@ -15,12 +17,12 @@ export default function ProjectInfo(props) {
         <div>Project:{props.name}</div>
         <div>
           <a className="links" href={props.url} target="_blank">
-            Deployment
+            <SiNetlify />
           </a>
         </div>
         <div>
           <a className="links" href={props.git} target="_blank">
-            Git
+            <BsGithub />
           </a>
         </div>
       </div>

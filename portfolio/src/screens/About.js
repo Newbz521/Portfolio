@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Nav from "../components/navbar/nav.js";
 import "../styles/About.css";
 import ProjectInfo from "../components/projectInfo/projectInfo.js";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 export default function About() {
   const text = [
@@ -50,11 +51,11 @@ export default function About() {
               href="https://www.linkedin.com/in/lawrenceyee91/"
               target="_blank"
             >
-              LinkedIn
+              <BsLinkedin />
             </a>{" "}
             |
             <a href="https://github.com/Newbz521" target="_blank">
-              GitHub
+              <BsGithub />
             </a>
           </div>
         </div>
