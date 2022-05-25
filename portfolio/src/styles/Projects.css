@@ -15,6 +15,7 @@
   align-items: flex-start;
   flex-direction: row;
   background: #f6f3e0;
+  filter: contrast(110%);
 }
 .projectContent {
   display: flex;

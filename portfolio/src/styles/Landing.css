@@ -5,6 +5,7 @@
   width: 100%;
   background: #5db8b9;
   z-index: -1;
+  filter: contrast(110%);
 }
 .landingContainer {
   display: flex;
@@ -15,6 +16,7 @@
   align-items: center;
   flex-direction: column;
   background: #5db8b9;
+  filter: contrast(110%);
 }
 .landingContent {
   display: flex;
