@@ -82,6 +82,7 @@
     text-orientation: upright;
     text-transform: uppercase;
     z-index: 5;
+    filter: contrast(140%);
   }
   .navLink {
     /* border: 1.5px solid red; */
