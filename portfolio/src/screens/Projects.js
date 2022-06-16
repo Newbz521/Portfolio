@@ -8,7 +8,7 @@ import Inner from "../files/inner.jpeg";
 import Maps from "../files/maps.jpeg";
 import Hater from "../files/Hater.jpeg";
 
-export default function Projects() {
+export default function Projects(props) {
   const allProjects = [
     {
       name: "Hater",
@@ -48,9 +48,18 @@ export default function Projects() {
     setCurrent(e.target.dataset.key);
     console.log(e.target.dataset.key);
   }
+
+  const changeNav = () => {
+    props.bg("#f6f3e0");
+    props.color("grey");
+  };
+  useEffect(() => {
+    changeNav();
+  }, []);
+
   return (
     <div className="projectsContainer">
-      <Nav color={"grey"} background={"#f6f3e0"}></Nav>
+      {/* <Nav color={"grey"} background={"#f6f3e0"}></Nav> */}
       <div className="background"></div>
       <div className="projectContent">
         {allProjects.map((data) => (

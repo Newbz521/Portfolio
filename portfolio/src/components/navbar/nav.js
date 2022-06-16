@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./nav.css";
 import Resume from "../../files/Resume.pdf";
 import { SiHomeadvisor, SiCodesandbox } from "react-icons/si";
@@ -7,33 +7,45 @@ import { BiUser } from "react-icons/bi";
 import { MdOutlineFileDownload } from "react-icons/md";
 
 function Nav(props) {
-  // const [color, setColor] = useState("white");
+  const [color, setColor] = useState("");
+  const [bg, setBg] = useState("");
+  function setTheme() {
+    setColor(props.color);
+    setBg(props.bg);
+  }
+
   function refreshPage() {
     // setColor("grey");
     window.location.href = "/Projects";
   }
+  useEffect(() => {
+    setTheme();
+  }, []);
 
   return (
     <nav
       className="navContainer"
-      style={{ "background-color": props.background }}
+      style={{ color: props.color, background: props.bg }}
     >
-      <Link className="navLink" to="/" style={{ color: props.color }}>
+      <Link
+        className="navLink"
+        to="/"
+        style={{ color: props.color }}
+        // onClick={function Change() {
+        //   setColor("white");
+        //   setBg("#5db8b9");
+        // }}
+      >
         <div className="icon">
           <SiHomeadvisor />
         </div>
         <div className="expand">Home</div>
       </Link>
-      <Link
-        className="navLink"
-        // onClick={refreshPage}
-        style={{ color: props.color }}
-        to="/Projects"
-      >
+      <Link className="navLink" to="/Projects" style={{ color: props.color }}>
         <div className="icon">
           <SiCodesandbox />
         </div>
-        <div className="expand">Project</div>
+        <div className="expand">Projects</div>
       </Link>
       <Link className="navLink" to="/About" style={{ color: props.color }}>
         <div className="icon">

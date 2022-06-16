@@ -5,7 +5,7 @@ import "../styles/About.css";
 import ProjectInfo from "../components/projectInfo/projectInfo.js";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
-export default function About() {
+export default function About(props) {
   const text = [
     "NYC.",
     "Software.Dev",
@@ -23,9 +23,17 @@ export default function About() {
     return () => clearInterval(interval);
   }, []);
 
+  const changeNav = () => {
+    props.bg("rgb(248, 145, 108)");
+    props.color("white");
+  };
+  useEffect(() => {
+    changeNav();
+  }, []);
+
   return (
     <div className="aboutContainer">
-      <Nav color={"white"} background={"rgb(248, 145, 108)"}></Nav>
+      {/* <Nav color={"white"} background={"rgb(248, 145, 108)"}></Nav> */}
       <div className="aboutBackground"></div>
       <div className="aboutContent">
         <div className="titleWrap">

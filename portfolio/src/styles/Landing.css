@@ -7,6 +7,14 @@
   z-index: -1;
   filter: contrast(110%);
 }
+.logoImage {
+  display: flex;
+  width: 60%;
+  height: 60%;
+  justify-content: center;
+  align-items: center;
+  font-size: 55px;
+}
 .landingContainer {
   display: flex;
   border: 1px solid blue;
@@ -47,11 +55,11 @@
   transition: 0.5s;
   border-radius: 50%;
   /* background: #5db8b9; */
-  box-shadow: 10px 10px 0px #dc382c, -10px -10px 0px #f6f3e0;
+  box-shadow: 5px 5px 0px #dc382c, -5px -5px 0px #f6f3e0;
   position: fixed;
 }
 .landingProPic:hover {
-  box-shadow: 10px 10px 0px #f6f3e0, -10px -10px 0px #dc382c;
+  box-shadow: 5px 5px 0px #f6f3e0, -5px -5px 0px #dc382c;
   cursor: pointer;
 }
 .landingJS,
