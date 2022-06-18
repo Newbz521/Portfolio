@@ -232,6 +232,7 @@
     box-shadow: 8px 8px 0px #254a4a, -8px -8px 0px #95ffff;
     /* box-shadow: 10px 10px 0px #dc382c, -10px -10px 0px rgb(255, 255, 255); */
     position: fixed;
+    overflow: hidden;
   }
   .landingProPic {
     width: 120px;
@@ -239,7 +240,7 @@
     font-size: 70px;
   }
 }
-@media only screen and (max-height: 600px) {
+/* @media only screen and (max-height: 600px) {
   .logoImage {
     display: flex;
     width: 40%;
@@ -273,7 +274,6 @@
     height: 90px;
     background: #f6f3e0;
     color: #000000;
-    /* font-weight: bold; */
     justify-content: center;
     align-items: center;
     font-family: "Bungee Outline", cursive;
@@ -282,7 +282,6 @@
     transition: 0.5s;
     border-radius: 50%;
     box-shadow: 8px 8px 0px #254a4a, -8px -8px 0px #95ffff;
-    /* box-shadow: 10px 10px 0px #dc382c, -10px -10px 0px rgb(255, 255, 255); */
     position: fixed;
   }
   .landingProPic {
@@ -290,4 +289,4 @@
     height: 120px;
     font-size: 70px;
   }
-}
+} */
